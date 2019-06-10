@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:300&display=swap');
 
 
 
 body {
-    font-family: 'Hind', sans-serif;
+    font-family: 'Lato', sans-serif, Tahoma, Sans-Serif;
     color: #444444;
     font-size: 11pt;
     background-color: #eeeeee;
@@ -16,13 +17,24 @@ body {
     overflow-x: hidden;
 }
 
+h1 {
+    /* text-transform: uppercase; */
+    font-weight: bold
+    /* font-family: 'Unica One', cursive, Tahoma, Sans-Serif;;  */
+}
+
 h5 {
     text-transform: uppercase;
     font-family: 'Unica One', cursive;
 }
 
+.section-head {
+    margin: 0px 0px;
+}
+
 hr {
-    padding: 0px 20px;
+    padding: 0px 0px;
+    margin: 0px 0px;
     /* width: 2px; */
 }
 
@@ -31,6 +43,11 @@ div.text-center {
     /* width: 100vw; */
 }
 
+iframe {
+    /* position: relative;
+    margin-left: auto;
+    margin-right: auto; */
+}
 
 @media (min-width: 10px) {
     .px-lg-8 {
@@ -110,6 +127,7 @@ div.text-center {
 
 .nav-link:hover {
     color: rgba(255, 255, 255, 0.9) !important;
+    transition: color 0.2s ease-out;
 }
 
 
@@ -127,6 +145,10 @@ div.text-center {
     .align-items-center {
         padding-left: 5vw;
         /* margin-left: auto; */
+    }
+
+    .carousel-caption {
+        visibility: hidden;
     }
   }
 
@@ -168,6 +190,8 @@ footer {
     -webkit-box-shadow: 0 -5px 10px -3px rgba(0, 0, 0, 0.411);
     -moz-box-shadow: 0 -5px 10px -3px rgba(0, 0, 0, 0.411);
     box-shadow: 0 -5px 10px -3px rgba(0, 0, 0, 0.411);
+    /* overflow-x: hidden; */
+    width: 100vw;
 }
 
 .social-container {
@@ -191,19 +215,26 @@ i.fas {
 }
 
 a {
-    color: rgba(255, 255, 255, 0.6);
+    color: #748CAB
+}
+
+a[href^="https"] {
+    color: rgba(255, 255, 255, 0.6) !important;
+
 
 }
 
-a:hover{
-    color: rgba(255, 255, 255, 0.9);
-    text-decoration: none;
+a[href^="https"]:hover {
+    color: rgba(255, 255, 255, 0.9) !important;
+    text-decoration: none !important;
+    transition: color 0.2s ease-out;
+
 }
 
 .social-icon {
     font-size: 18pt;
     padding-right: 5pt;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .social-text {
@@ -230,4 +261,76 @@ a:hover{
 .btn:focus {
     /* box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6); */
     box-shadow: none !important;
+}
+
+.calendar {
+    /* overflow-x: scroll; */
+    /* min-width: 500px; */
+}
+
+/* CARDS */
+.card-container {
+    border: none;
+    padding: 0px,0px,0px,0px; 
+
+    /* margin: 0px 10px 0px 0px; */
+    background-clip: content-box;
+    display: inline;
+}
+
+.card {
+    background-color: #dddddd;
+    border: none;
+    padding: 2.4rem 1rem 2rem 1rem;
+    border-radius: 0;
+    margin: none;
+    /* opacity: 1; */
+    /* transition: background-position 1s ease-out;
+    background-image: url("../public/cg-freshman.jpg");  */
+    /* background-size: cover; */
+
+    background-position: -100px;
+
+}
+.card:hover {
+    /* background-color: rgba(0,0,0,0) !important; */
+
+}
+
+.card.freshman-cg:hover {
+    background-image: url("../public/cg-freshman.jpg"); 
+    background-size: cover;
+    background-position: center;
+    /* opacity: 0; */
+    color: rgba(0,0,0,0);
+}
+
+.card.seeker-cg:hover {
+    background-image: url("../public/cg-seeker.jpg"); 
+    background-size: cover;
+    background-position: center;
+    /* opacity: 0; */
+    color: rgba(0,0,0,0);
+}
+
+.card.wednesday-cg:hover {
+    background-image: url("../public/cg-freshman.jpg"); 
+    background-size: cover;
+    background-position: center;
+    /* opacity: 0; */
+    color: rgba(0,0,0,0);
+}
+
+.card.thursday-cg:hover {
+    background-image: url("../public/cg-freshman.jpg"); 
+    background-size: cover;
+    background-position: center;
+    /* opacity: 0; */
+    color: rgba(0,0,0,0);
+}
+
+
+
+.gi-img {
+    width: 100%;
 }
