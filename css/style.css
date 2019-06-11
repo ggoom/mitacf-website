@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Unica+One&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Lato:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap');
 
 
 
@@ -15,17 +14,27 @@ body {
     margin-right: 0px;
     /* width: 100vw;    */
     overflow-x: hidden;
+    font-weight: 300;
+}
+
+b {
+    font-weight: 400;
 }
 
 h1 {
     /* text-transform: uppercase; */
-    font-weight: bold
+    font-weight: 300
     /* font-family: 'Unica One', cursive, Tahoma, Sans-Serif;;  */
 }
+
 
 h5 {
     text-transform: uppercase;
     font-family: 'Unica One', cursive;
+}
+
+br + h5 {
+    color: #3E5C76;
 }
 
 .section-head {
@@ -300,15 +309,12 @@ a[href^="https"]:hover {
     background-position: -100px;
 
 }
-.card:hover {
-    /* background-color: rgba(0,0,0,0) !important; */
 
-}
 
 .card:hover {
     background-size: cover;
     background-position: center;
-    color: rgba(0,0,0,0);
+    color: rgba(0,0,0,0) !important;
     cursor: default;
 }
 
@@ -363,6 +369,10 @@ a[href^="https"]:hover {
     /* background-size: cover; */
     height: 100%;
 
+}
+
+.team-name {
+    color: #444444;
 }
 
 .team-content {
@@ -430,3 +440,27 @@ a[href^="https"]:hover {
 .social-media {
     font-size: 36pt;
 }
+
+.sm-link {
+    color: #444444;
+    transition: color 200ms ease-out;
+}
+
+.sm-facebook-icon:hover {
+    color: rgba(60,90,153);
+    text-decoration: none;
+    
+}
+
+.sm-instagram-icon:hover {
+    color: rgba(193,53,132);
+}
+
+.fa-external-link-alt {
+    font-size: 10pt !important;
+    color: #aaa;
+    position: relative;
+    bottom: 2px;
+}
+
+/* .sm-facebook-text:hover {} */
