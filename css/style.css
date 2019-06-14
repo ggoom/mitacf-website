@@ -60,8 +60,8 @@ iframe {
 
 @media (min-width: 10px) {
     .px-lg-8 {
-        padding-left: 3rem !important;
-        padding-right: 3rem !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
     }
 }
 @media (min-width: 576px) {
@@ -282,7 +282,7 @@ a[href^="https"]:hover {
 .calendar {
     min-width: 600px;
     /* display: block; */
-    overflow-x: auto;
+    /* overflow-x: scroll; */
 }
 
 /* calendar hacks
