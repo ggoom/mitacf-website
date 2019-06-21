@@ -95,9 +95,9 @@ iframe {
     position: relative;
     /* height: 90px; */
     /* width: 100vw; */
-    -webkit-box-shadow: 0 5px 10px -3px rgba(0, 0, 0, 0.411);
-    -moz-box-shadow: 0 5px 10px -3px rgba(0, 0, 0, 0.411);
-    box-shadow: 0 5px 10px -3px rgba(0, 0, 0, 0.411);
+    -webkit-box-shadow: 0px -2px 6px 0px rgba(0,0,0,.25);
+    -moz-box-shadow: 0px -2px 6px 0px rgba(0,0,0,.25);
+    box-shadow: 0px 2px 6px 0px rgba(0,0,0,.25);
     z-index: 5;
 }
 
@@ -200,9 +200,9 @@ iframe {
 footer {
     background-color: #1D2D44;
     color: rgba(255, 255, 255, 0.6);
-    -webkit-box-shadow: 0 -5px 10px -3px rgba(0, 0, 0, 0.411);
-    -moz-box-shadow: 0 -5px 10px -3px rgba(0, 0, 0, 0.411);
-    box-shadow: 0 -5px 10px -3px rgba(0, 0, 0, 0.411);
+    -webkit-box-shadow: 0px -2px 6px 0px rgba(0,0,0,.25);
+    -moz-box-shadow: 0px -2px 6px 0px rgba(0,0,0,.25);
+    box-shadow: 0px -2px 6px 0px rgba(0,0,0,.25);
     /* overflow-x: hidden; */
     width: 100%;
     margin: 0px !important;
