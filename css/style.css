@@ -452,6 +452,9 @@ a[href^="https"]:hover {
 
 .sm-link {
     color: #444444;
+}
+
+.sm-icon {
     transition: color 200ms ease-out;
 }
 
