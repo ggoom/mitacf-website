@@ -11,7 +11,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
     crossorigin="anonymous">
   <title>Get Involved | MIT ACF</title>
@@ -79,13 +79,15 @@
 
         <div class="row px-2">
           <div class="col-md-6 card-container text-center px-2 py-2">
-            <div class="card freshman-cg">
-              <h5>Freshmen CG</h5>
+            <div class="card" id="freshman-cg">
+              <div class="img-container"></div>
+              <h5>Freshman CG</h5>
               <p>Led by Erica Weng and Oliver Ren<br>Meets Tuesdays 6–8pm<br>at W11 Christian Fellowship Lounge</p>
             </div>
           </div>
           <div class="col-md-6 card-container text-center px-2 py-2">
-            <div class="card seeker-cg">
+            <div class="card" id="seeker-cg">
+              <div class="img-container"></div>
               <h5>Seeker CG</h5>
               <p>Led by Erica Weng and Oliver Ren<br>Meets Tuesdays 6–8pm<br>at W11 Christian Fellowship Lounge</p>
             </div>
@@ -93,14 +95,16 @@
         </div>
         <div class="row px-2">
           <div class="col-md-6 card-container text-center px-2 py-2">
-            <div class="card wednesday-cg">
+            <div class="card" id="wednesday-cg">
+              <div class="img-container"></div>
               <h5>Wednesday CG</h5>
               <p>Led by Luke Shimanuki and Christina Lee<br>Meets Wednesdays 8–10pm<br>at W11 Christian Fellowship
                 Lounge</p>
             </div>
           </div>
           <div class="col-md-6 card-container text-center px-2 py-2">
-            <div class="card thursday-cg">
+            <div class="card" id="thursday-cg">
+              <div class="img-container"></div>
               <h5>Thursday CG</h5>
               <p>Led by Amy Fang and Chris Wang<br>Meets Thursdays 6–8pm<br>at McCormick Seminar Room B</p>
             </div>
@@ -262,6 +266,7 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="main.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"

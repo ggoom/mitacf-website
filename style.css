@@ -308,19 +308,19 @@ a[href^="https"]:hover {
     background-image: url("../public/cg-freshman.jpg");  */
     /* background-size: cover; */
 
-    background-position: -100px;
+    background-position: center;
+    background-size: cover;
 
 }
+
 
 
 .card:hover {
-    background-size: cover;
-    background-position: center;
-    color: rgba(0,0,0,0) !important;
-    cursor: default;
+    box-shadow:inset 0px 0px 0px 5px #eee;
+    transition: box-shadow 200ms ease-out;
 }
 
-.card.freshman-cg:hover {
+/* .card.freshman-cg:hover {
     background-image: url("../public/cg-freshman.jpg"); 
 
 }
@@ -338,7 +338,7 @@ a[href^="https"]:hover {
 .card.thursday-cg:hover {
     background-image: url("../public/cg-freshman.jpg"); 
 
-}
+} */
 
 
 
