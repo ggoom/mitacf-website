@@ -305,7 +305,7 @@ a[href^="https"]:hover {
     margin: none;
     /* opacity: 1; */
     /* transition: background-position 1s ease-out;
-    background-image: url("../public/cg-freshman.jpg");  */
+    background-image: url("../imgs/cg-freshman.jpg");  */
     /* background-size: cover; */
 
     background-position: center;
@@ -321,22 +321,22 @@ a[href^="https"]:hover {
 }
 
 /* .card.freshman-cg:hover {
-    background-image: url("../public/cg-freshman.jpg"); 
+    background-image: url("../imgs/cg-freshman.jpg"); 
 
 }
 
 .card.seeker-cg:hover {
-    background-image: url("../public/cg-seeker.jpg"); 
+    background-image: url("../imgs/cg-seeker.jpg"); 
 
 }
 
 .card.wednesday-cg:hover {
-    background-image: url("../public/cg-freshman.jpg"); 
+    background-image: url("../imgs/cg-freshman.jpg"); 
 
 }
 
 .card.thursday-cg:hover {
-    background-image: url("../public/cg-freshman.jpg"); 
+    background-image: url("../imgs/cg-freshman.jpg"); 
 
 } */
 
@@ -359,6 +359,7 @@ a[href^="https"]:hover {
 }
 
 .team {
+    position: relative;
     background-color: #dddddd;
     border: none;
     padding: 1.2rem;
@@ -367,76 +368,15 @@ a[href^="https"]:hover {
     /* min-height: 275px; */
     /* opacity: 1; */
     /* transition: background-position 1s ease-out;
-    background-image: url("../public/cg-freshman.jpg");  */
+    background-image: url("../imgs/cg-freshman.jpg");  */
     /* background-size: cover; */
     height: 100%;
-
+    transition: box-shadow 200ms ease-out;
 }
 
-.team-name {
-    color: #444444;
-}
-
-.team-content {
-    height: inherit;
-}
-
-.team-content:after {
-    height: 100%;
-    /* transition: height 500ms ease-out; */
-
-}
-
-.team-content:hover:after {
-    white-space: pre;
-}
-
-.team-content.vision-team:after {
-    content: "Vision Team is responsible for discerning big-picture vision for the fellowship and overseeing the implementation of vision through the various ministries and spaces of ACF. Vision members are the eyes of the chapter. By what we see, we direct other parts of the ministry to serve and lead.";
-}
-
-.team-content.vision-team:hover:after {
-    content: "Greg Hsu, Part-Time Staff \A Austin Wang, President \A Brian Park, Treasurer \A Grace Lam, UCO Representative"
-}
-
-.team-content.cg-team:after {
-    content: "The primary vision for the team is to glorify and magnify God through scripture-based music, and by the power of the Holy Spirit encourage growth in the spiritual walk of our community.  In worship, we lead the rest of the fellowship in the celebration, of His hope, joy, and peace.";
-}
-
-.team-content.cg-team:hover:after {
-    content: "Luke Shimanuki (lead) \A Chris Wang \A Daniel Stein \A Erica Weng \A Shirley Cao \A William Luo"
-}
-
-.team-content.lg-team:after {
-    content: "The vision of large groups in ACF is to for the entire fellowship to regularly gather as a Christ-centered community, in order to grow as and into a part of the body of Christ through which we can share and experience God’s transformative love together.";
-}
-
-.team-content.lg-team:hover:after {
-    content: "Austin Wang (lead) \A Annie Zhang (assistant lead) \A Lena Zhu \A Madi Wong";
-}
-
-.team-content.outreach-team:after {
-    content: "The purpose of outreach team is to share God’s relentless love in our lives with students on campus, personally invite them to our community, guide seekers and new Christians in their exploration of faith, and cultivate a passion in and equip ACF to reach out to and share the gospel with the MIT and Boston community.";
-}
-
-.team-content.outreach-team:hover:after {
-    content: "Grace Lam (lead) \A Abraham Skandera (assistant lead) \A Cindy Wang \A Doreen Chin";
-}
-
-.team-content.f-gang:after {
-    content: "The main vision of our team can be summarized into three words: building internal relationships. We believe that the ultimate goal of the team is to go beyond aiding in the creation of meaningful relationships — we’re called to create life-giving relationships that are centered around Christ.";
-}
-
-.team-content.f-gang:hover:after {
-    content: "Brian Park (lead) \A Kathryn Jin (assistant lead) \A Chris Cheung \A Jacqueline Liao \A Sally Liu \A Soomin Chun";
-}
-
-.team-content.worship-team:after {
-    content: "The primary vision for the team is to glorify and magnify God through scripture-based music, and by the power of the Holy Spirit encourage growth in the spiritual walk of our community.  In worship, we lead the rest of the fellowship in the celebration, of His hope, joy, and peace.";
-}
-
-.team-content.worship-team:hover:after {
-    content: "Brian Park (co-lead) \A Wendy Bae (co-lead) \A Austin Wang (co-lead) \A Chris Cheung \A Cindy Wang \A Doreen Chin \A Madi Wong";
+.team:hover {
+    box-shadow:inset 0px 0px 0px 4px #eee;
+    transition: box-shadow 200ms ease-out;
 }
 
 .social-media {
