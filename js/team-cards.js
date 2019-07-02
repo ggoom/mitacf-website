@@ -31,7 +31,11 @@ function switchBackground(item, index) {
     teamMembers.innerHTML = teamMemberLists[index];
 
     item.style.cursor = 'pointer';
+    // container.style.overflow = 'auto';
+    container.style.height = 'auto';
     teamContent.style.position = 'relative';
+    teamMembers.style.height = '100%';
+    teamMembers.style.overflow = 'auto';
     teamMembers.style.position = 'absolute';
     teamMembers.style.top = '0px';
     teamMembers.style.opacity = '0'
@@ -58,7 +62,6 @@ function switchBackground(item, index) {
         else {
             teamContent.style.opacity = '1';
             teamMembers.style.opacity = '0';
-            teamMembers.style.pointerEvents = 'none';
         }
         backgroundActive[index] = showBackground
     });
