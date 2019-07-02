@@ -17,6 +17,30 @@ body {
     font-weight: 300;
 }
 
+div::-webkit-scrollbar-track {
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px; */
+    background-color: rgba(255, 255, 255, 0);
+}
+  
+div::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .1); */
+    background-color: rgba(245, 245, 245, 0.5);
+    border-radius: 5px;
+}
+  
+div::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.363);
+    width: 80%;
+}
+  
+div::-webkit-scrollbar-corner {
+    background: rgba(0,0,0,0)
+}
+
 b {
     font-weight: 400;
 }
@@ -272,10 +296,13 @@ a[href^="https"]:hover {
     box-shadow: none !important;
 }
 
+.calendar-container {
+    max-width: 100%;
+    overflow: auto;
+}
+
 .calendar {
     min-width: 600px;
-    /* display: block; */
-    /* overflow-x: scroll; */
 }
 
 /* calendar hacks
@@ -408,4 +435,3 @@ a[href^="https"]:hover {
     bottom: 2px;
 }
 
-/* .sm-facebook-text:hover {} */
