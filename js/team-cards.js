@@ -31,7 +31,6 @@ function switchBackground(item, index) {
     teamMembers.innerHTML = teamMemberLists[index];
 
     item.style.cursor = 'pointer';
-    // container.style.overflow = 'auto';
     container.style.height = 'auto';
     teamContent.style.position = 'relative';
     teamMembers.style.height = '100%';
@@ -57,11 +56,13 @@ function switchBackground(item, index) {
             teamContent.style.opacity = '0';
             teamMembers.style.visibility = 'visible';
             teamMembers.style.opacity = '1';
+            item.style.backgroundColor = '#E0E5EC';
 
         }
         else {
             teamContent.style.opacity = '1';
             teamMembers.style.opacity = '0';
+            item.style.backgroundColor = '#D6DFEC'
         }
         backgroundActive[index] = showBackground
     });

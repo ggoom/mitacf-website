@@ -15,6 +15,7 @@ body {
     /* width: 100vw;    */
     overflow-x: hidden;
     font-weight: 300;
+    /* min-height: 100vh; */
 }
 
 div::-webkit-scrollbar-track {
@@ -217,6 +218,12 @@ div.text-center {
     /* -webkit-box-shadow: 0 -5px 10px -3px rgba(0, 0, 0, 0.411);
     -moz-box-shadow: 0 -5px 10px -3px rgba(0, 0, 0, 0.411); */
     filter: drop-shadow(0px 0px 2px rgba(197, 197, 197, 0.808));
+    transition: transform 200ms ease-out;
+}
+
+.triplet:hover {
+    transform: scale(1.01);
+    transition: transform 200ms ease-out;
 }
 
 footer {
@@ -325,7 +332,7 @@ a[href^="https"]:hover {
 }
 
 .card {
-    background-color: #dddddd;
+    background-color: #D6DFEC;
     border: none;
     padding: 2.4rem 1rem 2rem 1rem;
     border-radius: 0;
@@ -337,13 +344,16 @@ a[href^="https"]:hover {
 
     background-position: center;
     background-size: cover;
-
+    transition: box-shadow 200ms ease-out;
 }
 
+/* .cg-image:hover {
+    transform: scale(0.9)
+} */
 
 
 .card:hover {
-    box-shadow:inset 0px 0px 0px 5px #eee;
+    box-shadow: inset 0px 0px 0px 4px #eee;
     transition: box-shadow 200ms ease-out;
 }
 
@@ -387,7 +397,7 @@ a[href^="https"]:hover {
 
 .team {
     position: relative;
-    background-color: #dddddd;
+    background-color: #D6DFEC;
     border: none;
     padding: 1.2rem;
     border-radius: 0;
@@ -403,7 +413,8 @@ a[href^="https"]:hover {
 
 .team:hover {
     box-shadow:inset 0px 0px 0px 4px #eee;
-    transition: box-shadow 200ms ease-out;
+    transition: 200ms ease-out;
+    /* background-color: #E0E5EC; */
 }
 
 .social-media {

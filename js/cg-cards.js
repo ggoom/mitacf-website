@@ -7,7 +7,11 @@ cgCards.forEach(switchBackground);
 function switchBackground(item, index) {
     item.style.cursor = 'pointer';
     imgContainer = item.childNodes[1];
-    imgContainer.innerHTML = "<img src='" + cgImages[index] + "'/>";
+    imgContainer.innerHTML = "<img src='" + cgImages[index] + "' class='cg-image' />";
+    imgContainer.style.boxShadow = "inset 0px 0px 0px 5px #eee";
+    imgContainer.style.width = '100%';
+    imgContainer.style.height = '100%';
+
     innerImage = imgContainer.childNodes[0];
     innerImage.style.height = '100%';
     innerImage.style.width = '100%';
@@ -28,11 +32,13 @@ function switchBackground(item, index) {
             item.style.color = 'rgba(0, 0, 0, 0)';
             getImage.style.visibility = 'visible';
             getImage.style.opacity = '1';
+            item.style.backgroundColor = 'rgba(0,0,0,0)'
         }
         else {
             getImage.style.opacity = '0';
             getImage.style.transition = 'opacity 300ms ease-out';
             getImage.style.pointerEvents = 'none';
+            item.style.backgroundColor = ''
             item.style.color = '';
         }
         backgroundActive[index] = showBackground
