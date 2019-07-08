@@ -23,16 +23,15 @@ teamCards.forEach(switchBackground);
 function switchBackground(item, index) {
     container = item.childNodes[3]
     container.style.position = 'relative';
-    console.log(container.childNodes)
-    teamContent = container.childNodes[1]
+    teamDescription = container.childNodes[1]
     teamMembers = container.childNodes[3]
 
-    teamContent.innerHTML = teamDescriptions[index];
+    teamDescription.innerHTML = teamDescriptions[index];
     teamMembers.innerHTML = teamMemberLists[index];
 
     item.style.cursor = 'pointer';
     container.style.height = 'auto';
-    teamContent.style.position = 'relative';
+    teamDescription.style.position = 'relative';
     teamMembers.style.height = '100%';
     teamMembers.style.overflow = 'auto';
     teamMembers.style.position = 'absolute';
@@ -45,22 +44,22 @@ function switchBackground(item, index) {
 
     item.addEventListener('click', (e) => {
         container = item.childNodes[3]
-        teamContent = container.childNodes[1]
+        teamDescription = container.childNodes[1]
         teamMembers = container.childNodes[3]
 
         teamMembers.style.transition = 'opacity 200ms ease-out';
-        teamContent.style.transition = 'opacity 200ms ease-out';
+        teamDescription.style.transition = 'opacity 200ms ease-out';
 
         showBackground = !backgroundActive[index];
         if (showBackground) {
-            teamContent.style.opacity = '0';
+            teamDescription.style.opacity = '0';
             teamMembers.style.visibility = 'visible';
             teamMembers.style.opacity = '1';
             item.style.backgroundColor = '#E0E5EC';
 
         }
         else {
-            teamContent.style.opacity = '1';
+            teamDescription.style.opacity = '1';
             teamMembers.style.opacity = '0';
             item.style.backgroundColor = '#D6DFEC'
         }
